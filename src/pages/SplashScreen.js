@@ -13,6 +13,8 @@ import {
   Text,
 } from 'react-native';
 
+import theme from '../config/AppTheme'
+
 const SplashScreen = ({ navigation }) => {
   const navigate = navigation.navigate // Navegação entre telas
 
@@ -30,7 +32,7 @@ const SplashScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   splashScreen: {
     alignItems: 'center',
-    backgroundColor: '#1b2a49',
+    backgroundColor: theme.colorPrimary,
     flex: 1,
     justifyContent: 'center',
   },

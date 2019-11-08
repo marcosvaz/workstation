@@ -13,6 +13,8 @@ import {
     Text,
 } from 'react-native';
 
+import theme from '../config/AppTheme'
+
 const Home = () => {
     return (
         <>
@@ -26,7 +28,7 @@ const Home = () => {
 const styles = StyleSheet.create({
     home: {
         alignItems: 'center',
-        backgroundColor: '#1b2a49',
+        backgroundColor: theme.colorPrimary,
         flex: 1,
         justifyContent: 'center',
     },
