@@ -22,23 +22,27 @@ const SplashScreen = ({ navigation }) => {
 
   return (
     <>
-      <SafeAreaView style={styles.splashScreen}>
-        <Text style={styles.splashScreen_text}>Workstation</Text>
+      <SafeAreaView style={styles.splashScreen_container }>
+
+        <Text style={ styles.splashScreen_text }>Workstation</Text>
+
       </SafeAreaView>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  splashScreen: {
+  splashScreen_container: {
     alignItems: 'center',
     backgroundColor: theme.colorPrimary,
     flex: 1,
     justifyContent: 'center',
   },
+
   splashScreen_text: {
     color: 'white',
     fontSize: 18,
+    fontWeight: 'bold',
     textTransform: 'uppercase',
   },
 });
