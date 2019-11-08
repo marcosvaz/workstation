@@ -1,6 +1,6 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * SplashScreen
+ * https://github.com/marcosvaz/workstation
  *
  * @format
  * @flow
@@ -13,7 +13,10 @@ import {
   Text,
 } from 'react-native';
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }) => {
+  const navigate = navigation.navigate // Navegação entre telas
+
+  setTimeout(() => { navigate('Home') }, 3000) // Tempo para trocar de tela
 
   return (
     <>
