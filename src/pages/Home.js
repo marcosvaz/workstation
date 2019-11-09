@@ -42,7 +42,7 @@ const Home = ({ navigation }) => {
         },
         {
             id: 3,
-            name: 'ativos',
+            name: 'severidade',
             params: {
                 atendidos: 20,
                 pendentes: 12,
@@ -52,7 +52,7 @@ const Home = ({ navigation }) => {
         },
         {
             id: 4,
-            name: 'ativos',
+            name: 'gráfico',
             params: {
                 atendidos: 20,
                 pendentes: 12,

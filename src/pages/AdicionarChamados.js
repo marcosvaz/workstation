@@ -46,14 +46,14 @@ const AdicionarChamados = ({ navigation }) => {
 
                 </View>
 
-                <View style={{ flex: 1, marginHorizontal: 20 }}>
+                <ScrollView style={{ flex: 1, marginHorizontal: 20 }}>
                     <TextInput placeholder="Código" editable={false} style={[ styles.input, { backgroundColor: 'rgb(220, 220, 220)' } ]} />
                     <TextInput placeholder="Título" style={ styles.input } />
                     <TextInput placeholder="Responsável" style={ styles.input } />
                     <TextInput placeholder="Severidade" style={ styles.input } />
                     <TextInput placeholder="Descrição" multiline style={[ styles.input, { paddingBottom: 100 } ]} />
                     <TextInput placeholder="Atividades" style={ styles.input } />
-                </View>
+                </ScrollView>
 
 
                 {/* Action */}
