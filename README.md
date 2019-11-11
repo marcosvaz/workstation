@@ -6,6 +6,20 @@
 
 Workstation é um aplicativo para solicitação e atendimento de chamados, para empresas e profissionais.
 
+### Investimento
+|        Título     |     Valor     |
+| ----------------- | :-----------: |
+| Google Developer  |   R$ 150,00   |
+| Vídeo Intro       |       ?       |
+| Marketing         |       ?       |
+> Total: **R$ 150,00**
+
+### Infraestrutura
+|        Título     |     Valor     |
+| ----------------- | :-----------: |
+| Firebase          | R$ 200,00/mês |
+> Total: **R$ 200,00**
+
 ### Instalação
 Caso você não tenha um ambiente React Native, é altamente recomendável que você siga este tutorial: [React Native - Getting Started](https://facebook.github.io/react-native/docs/getting-started)
 
