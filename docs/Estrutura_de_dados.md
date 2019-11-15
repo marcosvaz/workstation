@@ -8,6 +8,8 @@
     ├── "companyId": "md5(Company CNPJ)"
     ├── "cnpj": "Company CNPJ"
     ├── "name": "Company Name"
+    ├── "createdAt": "moment().format()"
+    ├── "payment": "Payment status"
     ├── "administrator":
     │   ├── "userId": "md5(User email)"
     │   ├── "email": "User email"
@@ -18,6 +20,7 @@
     ├── "colaboratorsGroups":
     │   ├── "groupId": "md5(moment().format())"
     │   ├── "name": "Group name"
+    │   ├── "companyId": "md5(Company CPNJ)"
     │   └── "members":
     │       ├── "userId": "md5(User email)"
     │       └── "name": "User name"
@@ -27,6 +30,7 @@
     │   ├── "photo": "gs://url - Firebase Storage"
     │   ├── "name": "User name"
     │   ├── "password": "Personal encryption"
+    │   ├── "createdAt": "moment().format()"
     │   ├── "companyId": "md5(Company CNPJ)"
     │   ├── "status": "active | inative | be right back"
     │   └── "location":
@@ -40,7 +44,7 @@
     │           ├── "reference": "Reference of data"
     │           ├── "value": Value
     │           └── "svg":
-    │               └── "fill": "color"
+    │               └── "fill": "Color"
     └── "tickets":
         ├── "ticketId": "md5(moment().format())"
         ├── "type": "Type of ticket"
