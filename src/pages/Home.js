@@ -91,6 +91,7 @@ const Home = ({navigation}) => {
                   id={ticket.id}
                   type={ticket.type}
                   title={ticket.title}
+                  incharge={ticket.incharge}
                   location={ticket.location}
                   datetime={ticket.datetime}
                   status={ticket.status}
@@ -156,12 +157,12 @@ const styles = StyleSheet.create({
   },
 
   card_container: {
-    alignSelf: 'stretch',
     backgroundColor: '#FFF',
     borderRadius: 10,
     elevation: 3,
     marginTop: 10,
     paddingBottom: 20,
+    width: 180,
   },
 
   card_text: {

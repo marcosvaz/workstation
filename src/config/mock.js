@@ -103,7 +103,8 @@ export const tickets = [
   {
     id: '2109499',
     type: 'Manutenção',
-    title: 'Arrumar encanamento',
+    title: 'Portão elétrico com defeito',
+    incharge: 'João da Silva',
     location: 'Rua João de Morais, 558',
     datetime: '14 Nov, 2019 | 19:11',
     status: theme.success,
@@ -112,6 +113,7 @@ export const tickets = [
     id: '2109494',
     type: 'Instalação',
     title: 'Instalar câmeras',
+    incharge: 'Gabriel de Oliveira',
     location: 'Avenida Brasil, 1024',
     datetime: '12 Out, 2019 | 14:35',
     status: theme.warning,

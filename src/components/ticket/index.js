@@ -7,7 +7,7 @@ import {
 import theme from '../../config/AppTheme'
 import IOSIcon from 'react-native-vector-icons/Ionicons'
 
-const Ticket = ({ id, type, title, location, datetime, status }) => {
+const Ticket = ({ id, type, title, incharge, location, datetime, status }) => {
     return (
       <View style={[styles.ticket_card, {borderLeftColor: status}]}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
@@ -16,14 +16,16 @@ const Ticket = ({ id, type, title, location, datetime, status }) => {
         </View>
         <Text style={styles.ticket_title}>{title}</Text>
         <View style={{flexDirection: 'row', alignContent: 'center'}}>
+          <IOSIcon name="ios-man" color={theme.colorSecondary} size={24} />
+          <Text style={styles.ticket_location}>{incharge}</Text>
+        </View>
+        <View style={{flexDirection: 'row', alignContent: 'center'}}>
           <IOSIcon name="ios-pin" color={theme.colorSecondary} size={24} />
           <Text style={styles.ticket_location}>{location}</Text>
         </View>
-        <Text style={styles.ticket_time}>
-          {datetime}
-        </Text>
+        <Text style={styles.ticket_time}>{datetime}</Text>
       </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
