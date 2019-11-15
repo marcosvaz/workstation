@@ -1,4 +1,4 @@
-### [voltar](../README.md)
+[voltar](../README.md)
 
 # Investimento
 
@@ -14,3 +14,5 @@
 | ----------------- | :-----------: |
 | Firebase          | R$ 200,00/mês |
 > Total: **R$ 200,00**
+
+[Estrutura de dados](./Estrutura_de_dados.md)
