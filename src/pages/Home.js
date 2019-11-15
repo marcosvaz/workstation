@@ -156,12 +156,12 @@ const styles = StyleSheet.create({
   },
 
   card_container: {
+    alignSelf: 'stretch',
     backgroundColor: '#FFF',
     borderRadius: 10,
     elevation: 3,
-    height: 180,
     marginTop: 10,
-    width: 180,
+    paddingBottom: 20,
   },
 
   card_text: {
