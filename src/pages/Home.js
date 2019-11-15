@@ -9,83 +9,24 @@
 import React from 'react';
 import {FloatingAction} from 'react-native-floating-action';
 import Icon from 'react-native-vector-icons/FontAwesome';
-
+import {PieChart} from 'react-native-svg-charts';
 import {
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
-    Image,
-    TouchableWithoutFeedback,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableWithoutFeedback,
 } from 'react-native';
-import Ticket from '../components/ticket'
+import Ticket from '../components/ticket';
 
 import theme from '../config/AppTheme';
 
-const Home = ({navigation}) => {
-    console.log('pronto')
-    const {navigate} = navigation;
-    const data = [
-    {
-      id: 1,
-      name: 'funcionarios',
-      params: {
-        ativos: 20,
-        inativos: 12,
-        total: 32,
-      },
-    },
-    {
-      id: 2,
-      name: 'chamados',
-      params: {
-        atendidos: 20,
-        pendentes: 12,
-        atrasados: 11,
-        total: 43,
-      },
-    },
-    {
-      id: 3,
-      name: 'severidade',
-      params: {
-        atendidos: 20,
-        pendentes: 12,
-        atrasados: 11,
-        total: 43,
-      },
-    },
-    {
-      id: 4,
-      name: 'gráfico',
-      params: {
-        atendidos: 20,
-        pendentes: 12,
-        atrasados: 11,
-        total: 43,
-      },
-    },
-  ];
+import {data, tickets} from '../config/mock';
 
-  const tickets = [
-    {
-      id: '2109499',
-      type: 'Manutenção',
-      title: 'Arrumar encanamento',
-      location: 'Rua João de Morais, 558',
-      datetime: '14 Nov, 2019 | 19:11',
-      status: theme.success,
-    },
-    {
-      id: '2109494',
-      type: 'Instalação',
-      title: 'Instalar câmeras',
-      location: 'Avenida Brasil, 1024',
-      datetime: '12 Nov, 2019 | 19:11',
-      status: theme.warning,
-    },
-  ];
+const Home = ({navigation}) => {
+  const {navigate} = navigation;
 
   return (
     <>
@@ -127,6 +68,11 @@ const Home = ({navigation}) => {
                 return (
                   <View style={styles.card_container} key={d.id}>
                     <Text style={styles.card_text}>{d.name}</Text>
+                    <PieChart
+                      valueAccessor={({item}) => item.value}
+                      data={d.graph}
+                      style={{height: 100, marginTop: 15}}
+                    />
                   </View>
                 );
               })}
@@ -138,24 +84,23 @@ const Home = ({navigation}) => {
             <Text style={styles.home_text}>Últimos chamados</Text>
 
             {/* Chamado */}
-            {
-              tickets.map(ticket => {
-                return (
-                  <Ticket 
-                    id={ticket.id} 
-                    type={ticket.type}
-                    title={ticket.title}
-                    location={ticket.location}
-                    datetime={ticket.datetime}
-                    status={ticket.status}
-                  />
-                )
-              })
-            }
-
+            {tickets.map(ticket => {
+              return (
+                <Ticket
+                  key={ticket.id}
+                  id={ticket.id}
+                  type={ticket.type}
+                  title={ticket.title}
+                  location={ticket.location}
+                  datetime={ticket.datetime}
+                  status={ticket.status}
+                />
+              );
+            })}
           </View>
         </ScrollView>
 
+        {/* Botão de ação */}
         <FloatingAction
           actions={[
             {
@@ -167,10 +112,17 @@ const Home = ({navigation}) => {
             },
             {
               color: 'white',
+              icon: require('../assets/list.png'),
+              name: 'VerChamados',
+              text: 'Ver todos os chamados',
+              position: 2,
+            },
+            {
+              color: 'white',
               icon: require('../assets/location.png'),
               name: 'VerFuncionarios',
               text: 'Localizar funcionários',
-              position: 2,
+              position: 3,
             },
           ]}
           onPressItem={name => navigate(name)}
