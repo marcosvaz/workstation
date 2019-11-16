@@ -4,7 +4,7 @@
 
 ```text
 "data"
-└── "company":
+└── "companies":
     ├── "companyId": "md5(Company CNPJ)"
     ├── "cnpj": "Company CNPJ"
     ├── "name": "Company Name"
