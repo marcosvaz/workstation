@@ -9,6 +9,7 @@ RF01 - Deve ser permitido o cadastro de usuários
     RF01.2 - O ID do usuário deve ser o email do usuário criptografado em MD5
     RF01.3 - Os usuários que se cadastrarem pela primeira vez sem uma empresa, tem um tempo de utilização de 7 dias gratuitos
     RF01.4 - Devem existir os campos: foto, status e localização, para a utilização em partes do sistema
+    RF01.5 - A foto enviada pelo usuário deve ser guardada no Firebase Storage
 RF02 - Deve ser permitido o login de usuários
     RF02.1 - No login, deve ser feita a validação do tempo gratuito ou do pagamento da empresa do usuário
 RF03 - Na página inicial:
@@ -28,6 +29,7 @@ RF06 - Na página de listar os chamados:
 RF07 - Na página de ver a localização dos colaboradores:
     RF07.1 - A localização deve ser atualizada em tempo real
     RF07.2 - Deve ser mostrada a localização de todos os colaboradores
+RF08 - O banco de dados utilizado deve ser o Firebase Cloud Firestore
 ```
 
 ### Requisitos Não Funcionais
