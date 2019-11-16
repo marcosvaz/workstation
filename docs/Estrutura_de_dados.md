@@ -47,10 +47,10 @@
     │               └── "fill": "Color"
     └── "tickets":
         ├── "ticketId": "md5(moment().format())"
-        ├── "type": "Type of ticket"
-        ├── "title": "Title of ticket"
+        ├── "type": "Ticket type"
+        ├── "title": "Ticket title"
         ├── "details": "Details about the ticket"
-        ├── "inCharge": "Ticket in charge"
+        ├── "inCharge": "Person in charge for the ticket"
         ├── "location":
         │   ├── "address": "Ticket address"
         │   ├── "latitude": "Ticket latitude"

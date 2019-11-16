@@ -1,95 +1,60 @@
 {
     "company": [
         {
-            "companyId": "md5(cnpj)",
-            "name": "Brasil Tecnlogia",
+            "companyId": "md5(Company CNPJ)",
+            "cnpj": "Company CNPJ",
+            "name": "Company name",
+            "createdAt": "moment().format()",
+            "payment": "Payment status",
             "administrator": [
                 {
-                    "userId": "md5(email)",
-                    "email": "brasiltecno01@gmail.com",
-                    "photo": "gs://url (Firebase Storage)",
-                    "name": "Marco Aurélio dos Santos Oliveira",
-                    "password": "criptografia própria",
-                    "companyId": "md5(cnpj)"
+                    "userId": "md5(User email)",
+                    "email": "User email",
+                    "photo": "gs://url - Firebase Storage",
+                    "name": "User name",
+                    "password": "Personal encryption",
+                    "companyId": "md5(Company CNPJ)"
                 }
             ],
             "colaboratorsGroups": [
                 {
                     "groupId": "md5(moment().format())",
-                    "name": "TI",
+                    "name": "Group name",
+                    "companyId": "md5(Comapany CNPJ)",
                     "members": [
                         {
-                            "userId": "md5(email)",
-                            "name": "Marcos Paulo Vaz de Oliveira"
+                            "userId": "md5(User email)",
+                            "name": "User name"
                         }
                     ]
                 }
             ],
             "colaborators": [
                 {
-                    "userId": "md5(email)",
-                    "email": "marcosvaz.me@gmail.com",
-                    "photo": "gs://url (Firebase Storage)",
-                    "name": "Marcos Paulo Vaz de Oliveira",
-                    "password": "criptografia própria",
-                    "companyId": "md5(cnpj)",
-                    "status": "ativo|inativo|ausente",
+                    "userId": "md5(User email)",
+                    "email": "User email",
+                    "photo": "gs://url - Firebase Storage",
+                    "name": "User name",
+                    "password": "Personal encryption",
+                    "companyId": "md5(Company CNPJ)",
+                    "status": "active | inative | be right back",
                     "location": {
-                        "address": "Rua Senador Lameira Bittencourt, 14",
-                        "latitude": "latitude",
-                        "longitude": "longitude"
+                        "address": "User actual location",
+                        "latitude": "User actual latitude",
+                        "longitude": "User actual longitude"
                     }
                 }
             ],
             "graphs": [
                 {
-                    "title": "funcionários",
+                    "title": "Graph title",
                     "data": [
                         {
                             "id": 1,
-                            "reference": "ativos|inativos|ausentes",
-                            "value": 10,
+                            "reference": "Reference of data",
+                            "value": 1,
                             "svg": { 
-                                "fill": "cor"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "title": "chamados",
-                    "data": [
-                        {
-                            "id": 1,
-                            "reference": "concluídos|pendentes|atrasados|cancelados",
-                            "value": 10,
-                            "svg": {
-                                "fill": "cor"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "title": "severidade",
-                    "data": [
-                        {
-                            "id": 1,
-                            "reference": "crítica|alta|média|baixa",
-                            "value": 10,
-                            "svg": {
-                                "fill": "cor"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "title": "gráfico",
-                    "data": [
-                        {
-                            "id": 1,
-                            "reference": "concluído|atrasado|cancelado",
-                            "value": 10,
-                            "svg": {
-                                "fill": "cor"
+                                "fill": "Color"
                             }
                         }
                     ]
@@ -98,24 +63,24 @@
             "tickets": [
                 {
                     "ticketId": "md5(moment().format())",
-                    "type": "Instalação|Manutenção|Criar outro",
-                    "title": "Criação do aplicativo",
-                    "details": "Detalhamento sobre o chamado",
-                    "inCharge": "Marcos Paulo Vaz de Oliveira",
+                    "type": "Ticket type",
+                    "title": "Ticket title",
+                    "details": "Details about the ticket",
+                    "inCharge": "Person in charge for the ticket",
                     "location": {
-                        "address": "Rua Senador Lameira Bittencourt, 14",
-                        "latitude": "latitude",
-                        "longitude": "longitude"
+                        "address": "Ticket address",
+                        "latitude": "Ticket latitude",
+                        "longitude": "Ticket longitude"
                     },
-                    "datetime": "14 Nov, 2019 | 16:19",
-                    "status": "concluído|pendente|atrasado|cancelado",
-                    "viewed": { "userId": "md5(email)" },
+                    "datetime": "Day Month, Year | Hour:Minute",
+                    "status": "complete | pending | delayed | canceled",
+                    "viewed": { "userId": "md5(User email)" },
                     "comments": [
                         {
                             "datetime": "moment().format()",
-                            "userId": "md5(email)",
-                            "comment": "Apenas um comentário de teste",
-                            "viewed": { "userId": "md5(email)" }
+                            "userId": "md5(User email)",
+                            "comment": "Comment",
+                            "viewed": { "userId": "md5(User email)" }
                         }
                     ]
                 }
