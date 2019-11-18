@@ -40,6 +40,8 @@ const Home = ({navigation}) => {
               <Icon name="navicon" size={40} color={theme.colorSecondary} />
             </TouchableWithoutFeedback>
 
+            <Text style={styles.home_text}>Dashboard</Text>
+
             {/* Foto do usuário */}
             <TouchableWithoutFeedback onPress={() => console.log('Perfil')}>
               <Image
@@ -49,11 +51,6 @@ const Home = ({navigation}) => {
                 style={{width: 40, height: 40, borderRadius: 100}}
               />
             </TouchableWithoutFeedback>
-          </View>
-
-          {/* Título da Página */}
-          <View style={styles.home_header}>
-            <Text style={styles.home_text}>Dashboard</Text>
           </View>
 
           {/* Gráficos e métricas */}
@@ -92,7 +89,7 @@ const Home = ({navigation}) => {
             {/* Chamado */}
             {
               companies.filter(company => company.cnpj === "51.072.665/0001-41").map(company =>
-                company.tickets.map(ticket => {
+                company.tickets.slice(0,3).map(ticket => {
                   // Card
                   return (
                     <Ticket
@@ -162,7 +159,7 @@ const styles = StyleSheet.create({
   },
 
   home_text: {
-    color: theme.colorPrimary,
+    color: theme.colorSecondary,
     fontSize: 24,
     fontWeight: 'bold',
   },

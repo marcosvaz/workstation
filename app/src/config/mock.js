@@ -146,11 +146,11 @@ export const data = {
                 },
                 {
                     "id": 4,
-                    "title": "teste",
+                    "title": "departamentos",
                     "data": [
                         {
                             "id": 1,
-                            "reference": "extrema",
+                            "reference": "TI",
                             "value": 40,
                             "svg": {
                                 "fill": theme.error
@@ -158,7 +158,7 @@ export const data = {
                         },
                         {
                             "id": 2,
-                            "reference": "alta",
+                            "reference": "Suporte",
                             "value": 20,
                             "svg": {
                                 "fill": theme.error
@@ -166,7 +166,7 @@ export const data = {
                         },
                         {
                             "id": 3,
-                            "reference": "média",
+                            "reference": "Portais",
                             "value": 11,
                             "svg": {
                                 "fill": theme.warning
@@ -174,7 +174,15 @@ export const data = {
                         },
                         {
                             "id": 4,
-                            "reference": "baixa",
+                            "reference": "Bot",
+                            "value": 18,
+                            "svg": {
+                                "fill": theme.colorSecondary
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "reference": "Agente Virtual",
                             "value": 18,
                             "svg": {
                                 "fill": theme.colorSecondary
@@ -196,7 +204,7 @@ export const data = {
                         "longitude": "-23.5233829"
                     },
                     "datetime": "18 Nov, 2019 | 17:11",
-                    "status": "pending",
+                    "status": "delayed",
                     "viewed": {},
                     "comments": [
                         {}

@@ -9,7 +9,7 @@ import IOSIcon from 'react-native-vector-icons/Ionicons'
 
 const Ticket = ({ id, type, title, incharge, location, datetime, status }) => {
     return (
-      <View style={[styles.ticket_card, {borderLeftColor: status === "complete" ? theme.success : status === "pending" ? theme.warning : status === "delayed" ? theme.error : status === "canceled" ? theme.colorSecondary : theme.colorPrimary }]}>
+      <View style={[styles.ticket_card, {borderLeftColor: status === "complete" ? theme.success : status === "pending" ? theme.warning : status === "delayed" ? theme.error : theme.inative }]}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={styles.ticket_type}>{type}</Text>
           <Text style={styles.ticket_id}>#{id}</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   ticket_location: {
     color: '#424242',
     fontSize: 16,
-    marginBottom: 20,
+    marginBottom: 10,
     marginLeft: 10,
   },
 
