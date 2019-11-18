@@ -23,7 +23,9 @@ import Ticket from '../components/ticket';
 
 import theme from '../config/AppTheme';
 
-import {data, tickets} from '../config/mock';
+import { data } from '../config/mock'
+const companies = data.companies
+console.log(companies)
 
 const Home = ({navigation}) => {
   const {navigate} = navigation;
@@ -63,19 +65,23 @@ const Home = ({navigation}) => {
                 justifyContent: 'space-between',
                 flexWrap: 'wrap',
               }}>
-              {data.map(d => {
-                // Card
-                return (
-                  <View style={styles.card_container} key={d.id}>
-                    <Text style={styles.card_text}>{d.name}</Text>
-                    <PieChart
-                      valueAccessor={({item}) => item.value}
-                      data={d.graph}
-                      style={{height: 100, marginTop: 15}}
-                    />
-                  </View>
-                );
-              })}
+              {
+                companies.filter(company => company.cnpj === "51.072.665/0001-41").map(company =>
+                  company.graphs.map(graph => {
+                    // Card
+                    return (
+                      <View style={styles.card_container} key={graph.id}>
+                        <Text style={styles.card_text}>{graph.title}</Text>
+                        <PieChart
+                          valueAccessor={({ item }) => item.value}
+                          data={graph.data}
+                          style={{ height: 100, marginTop: 15 }}
+                        />
+                      </View>
+                    );
+                  })
+                )
+              }
             </View>
           </View>
 
@@ -84,20 +90,25 @@ const Home = ({navigation}) => {
             <Text style={styles.home_text}>Últimos chamados</Text>
 
             {/* Chamado */}
-            {tickets.map(ticket => {
-              return (
-                <Ticket
-                  key={ticket.id}
-                  id={ticket.id}
-                  type={ticket.type}
-                  title={ticket.title}
-                  incharge={ticket.incharge}
-                  location={ticket.location}
-                  datetime={ticket.datetime}
-                  status={ticket.status}
-                />
-              );
-            })}
+            {
+              companies.filter(company => company.cnpj === "51.072.665/0001-41").map(company =>
+                company.tickets.map(ticket => {
+                  // Card
+                  return (
+                    <Ticket
+                      key={ticket.ticketId}
+                      id={ticket.ticketId.substring(0, 7).toUpperCase()}
+                      type={ticket.type}
+                      title={ticket.title}
+                      incharge={ticket.inCharge}
+                      location={ticket.location.address}
+                      datetime={ticket.datetime}
+                      status={ticket.status}
+                    />
+                  );
+                })
+              )
+            }
           </View>
         </ScrollView>
 

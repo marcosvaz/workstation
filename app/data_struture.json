@@ -47,6 +47,7 @@
             ],
             "graphs": [
                 {
+                    "id": 1,
                     "title": "Graph title",
                     "data": [
                         {

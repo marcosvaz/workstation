@@ -38,13 +38,14 @@
     │       ├── "latitude": "User actual latitude"
     │       └── "longitude": "User actual longitude"
     ├── "graphs":
-    │       ├── "title": "Graph title"
-    │       └── "data":
-    │           ├── "id": Id
-    │           ├── "reference": "Reference of data"
-    │           ├── "value": Value
-    │           └── "svg":
-    │               └── "fill": "Color"
+    │   ├── "id": Id
+    │   ├── "title": "Graph title"
+    │   └── "data":
+    │       ├── "id": Id
+    │       ├── "reference": "Reference of data"
+    │       ├── "value": Value
+    │       └── "svg":
+    │           └── "fill": "Color"
     └── "tickets":
         ├── "ticketId": "md5(moment().format())"
         ├── "type": "Ticket type"

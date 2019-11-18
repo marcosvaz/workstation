@@ -9,7 +9,7 @@ import IOSIcon from 'react-native-vector-icons/Ionicons'
 
 const Ticket = ({ id, type, title, incharge, location, datetime, status }) => {
     return (
-      <View style={[styles.ticket_card, {borderLeftColor: status}]}>
+      <View style={[styles.ticket_card, {borderLeftColor: status === "complete" ? theme.success : status === "pending" ? theme.warning : status === "delayed" ? theme.error : status === "canceled" ? theme.colorSecondary : theme.colorPrimary }]}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={styles.ticket_type}>{type}</Text>
           <Text style={styles.ticket_id}>#{id}</Text>
