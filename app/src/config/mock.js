@@ -8,16 +8,14 @@ export const data = {
             "name": "Brasil Tecnologia",
             "createdAt": "2019-11-18T16:23:04-03:00",
             "payment": "ok",
-            "administrator": [
-                {
-                    "userId": "3d5dfffad46510014164b0ba8c2a3e8f",
-                    "email": "marcosvaz.me@gmail.com",
-                    "photo": "gs://url - Firebase Storage",
-                    "name": "Marcos Vaz",
-                    "password": "Personal encryption",
-                    "companyId": "8cabfe40780cef8824d0284b51d56303"
-                }
-            ],
+            "administrator": {
+                "userId": "3d5dfffad46510014164b0ba8c2a3e8f",
+                "email": "marcosvaz.me@gmail.com",
+                "photo": "gs://url - Firebase Storage",
+                "name": "Marcos Vaz",
+                "password": "teste01",
+                "companyId": "8cabfe40780cef8824d0284b51d56303"
+            },
             "colaboratorsGroups": [
                 {}
             ],

@@ -18,7 +18,7 @@ import theme from '../config/AppTheme'
 const SplashScreen = ({ navigation }) => {
   const navigate = navigation.navigate // Navegação entre telas
 
-  setTimeout(() => { navigate('Home') }, 3000) // Tempo para trocar de tela
+  setTimeout(() => { navigate('Login') }, 3000) // Tempo para trocar de tela
 
   return (
     <>
