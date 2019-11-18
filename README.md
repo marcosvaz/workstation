@@ -15,25 +15,19 @@
     FIXME: Formulário de adicionar chamado
     FIXME: Cor dos gráficos
 
-    # Versão Beta
+    # Próxima etapa
     TODO: Aplicativo para funcionário
 -->
 
 Workstation é um aplicativo para solicitação e atendimento de chamados, para empresas e profissionais.
 
-### Investimento
-|        Título     |     Valor     |
-| ----------------- | :-----------: |
-| Google Developer  |   R$ 150,00   |
-| Vídeo Intro       |       ?       |
-| Marketing         |       ?       |
-> Total: **R$ 150,00**
-
-### Infraestrutura
-|        Título     |     Valor     |
-| ----------------- | :-----------: |
-| Firebase          | R$ 200,00/mês |
-> Total: **R$ 200,00**
+### Conteúdo
++ [Investimento](./docs/Investimento.md)
++ [Documentação de Software](./docs/Documentacao_de_software.md)
++ [Estrutura de dados](./docs/Estrutura_de_dados.md)
++ [Instalação](#instalação)
++ [Produção](#versão-de-produção)
++ [Licença](#licença)
 
 ### Instalação
 Caso você não tenha um ambiente React Native, é altamente recomendável que você siga este tutorial: [React Native - Getting Started](https://facebook.github.io/react-native/docs/getting-started)
