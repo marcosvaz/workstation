@@ -7,7 +7,7 @@
  */
 
 import React, { useState } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Config from 'react-native-config'
 import {
     SafeAreaView,
     ScrollView,
@@ -48,7 +48,9 @@ const Login = ({ navigation }) => {
         }
     }
 
-    return (
+    console.log(process, Config.DEBUG)
+
+    return !Config.DEBUG ? (
         <>
             <SafeAreaView style={{ flex: 1, backgroundColor: '#ECEFF1' }}>
                 <ScrollView contentContainerStyle={{ flex: 1 }}>
@@ -66,7 +68,7 @@ const Login = ({ navigation }) => {
                 </ScrollView>
             </SafeAreaView>
         </>
-    );
+    ) : navigate('Home')
 };
 
 const styles = StyleSheet.create({
