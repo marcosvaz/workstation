@@ -49,6 +49,7 @@
     └── "tickets":
         ├── "ticketId": "md5(moment().format())"
         ├── "type": "Ticket type"
+        ├── "severity": "Ticket severity"
         ├── "title": "Ticket title"
         ├── "details": "Details about the ticket"
         ├── "inCharge": "Person in charge for the ticket"
