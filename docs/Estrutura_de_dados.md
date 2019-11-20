@@ -41,7 +41,7 @@
     │   ├── "id": Id
     │   ├── "title": "Graph title"
     │   └── "data":
-    │       ├── "id": Id
+    │       ├── "key": Graph key
     │       ├── "reference": "Reference of data"
     │       ├── "value": Value
     │       └── "svg":

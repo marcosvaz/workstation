@@ -41,7 +41,7 @@ export const data = {
                     "title": "funcionários",
                     "data": [
                         {
-                            "id": 1,
+                            "key": 1,
                             "reference": "ativos",
                             "value": 20,
                             "svg": {
@@ -49,7 +49,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 2,
+                            "key": 2,
                             "reference": "ausentes",
                             "value": 10,
                             "svg": {
@@ -57,7 +57,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 3,
+                            "key": 3,
                             "reference": "inativos",
                             "value": 12,
                             "svg": {
@@ -71,7 +71,7 @@ export const data = {
                     "title": "chamados",
                     "data": [
                         {
-                            "id": 1,
+                            "key": 1,
                             "reference": "atendidos",
                             "value": 20,
                             "svg": {
@@ -79,7 +79,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 2,
+                            "key": 2,
                             "reference": "pendentes",
                             "value": 12,
                             "svg": {
@@ -87,7 +87,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 3,
+                            "key": 3,
                             "reference": "atrasados",
                             "value": 11,
                             "svg": {
@@ -95,7 +95,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 4,
+                            "key": 4,
                             "reference": "agendados",
                             "value": 18,
                             "svg": {
@@ -109,7 +109,7 @@ export const data = {
                     "title": "severidade",
                     "data": [
                         {
-                            "id": 1,
+                            "key": 1,
                             "reference": "extrema",
                             "value": 5,
                             "svg": {
@@ -117,7 +117,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 2,
+                            "key": 2,
                             "reference": "alta",
                             "value": 20,
                             "svg": {
@@ -125,7 +125,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 3,
+                            "key": 3,
                             "reference": "média",
                             "value": 11,
                             "svg": {
@@ -133,7 +133,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 4,
+                            "key": 4,
                             "reference": "baixa",
                             "value": 18,
                             "svg": {
@@ -147,7 +147,7 @@ export const data = {
                     "title": "departamentos",
                     "data": [
                         {
-                            "id": 1,
+                            "key": 1,
                             "reference": "TI",
                             "value": 40,
                             "svg": {
@@ -155,7 +155,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 2,
+                            "key": 2,
                             "reference": "Suporte",
                             "value": 20,
                             "svg": {
@@ -163,7 +163,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 3,
+                            "key": 3,
                             "reference": "Portais",
                             "value": 11,
                             "svg": {
@@ -171,7 +171,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 4,
+                            "key": 4,
                             "reference": "Bot",
                             "value": 18,
                             "svg": {
@@ -179,7 +179,7 @@ export const data = {
                             }
                         },
                         {
-                            "id": 5,
+                            "key": 5,
                             "reference": "Agente Virtual",
                             "value": 18,
                             "svg": {

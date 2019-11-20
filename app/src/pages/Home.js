@@ -70,6 +70,7 @@ const Home = ({navigation}) => {
                       <View style={styles.card_container} key={graph.id}>
                         <Text style={styles.card_text}>{graph.title}</Text>
                         <PieChart
+                          key={({ item }) => item.id}
                           valueAccessor={({ item }) => item.value}
                           data={graph.data}
                           style={{ height: 100, marginTop: 15 }}
