@@ -193,6 +193,7 @@ export const data = {
                 {
                     "ticketId": "ac97d6be3da96b19756c174c8ff1287b",
                     "type": "Desenvolvimento",
+                    "severity": "alta",
                     "title": "Desenvolver Workstation",
                     "details": "Desenvolver o aplicativo da Workstation",
                     "inCharge": "Marcos Vaz",
@@ -211,6 +212,7 @@ export const data = {
                 {
                     "ticketId": "a55da8095e0c01167bfb3d06fccc7e3f",
                     "type": "Manutenção",
+                    "severity": "baixa",
                     "title": "Arrumar câmeras",
                     "details": "Desenvolver o aplicativo da Workstation",
                     "inCharge": "Marco Aurélio",
