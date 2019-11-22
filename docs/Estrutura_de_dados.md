@@ -13,6 +13,8 @@
     ├── "administrator":
     │   ├── "userId": "md5(User email)"
     │   ├── "email": "User email"
+    │   ├── "phone": "User phone"
+    │   ├── "role": "administrator | manager"
     │   ├── "photo": "gs://url - Firebase Storage"
     │   ├── "name": "User name"
     │   ├── "password": "Personal encryption"
@@ -27,6 +29,7 @@
     ├── "colaborators":
     │   ├── "userId": "md5(User email)"
     │   ├── "email": "User User email"
+    │   ├── "phone": "User phone"
     │   ├── "photo": "gs://url - Firebase Storage"
     │   ├── "name": "User name"
     │   ├── "password": "Personal encryption"
@@ -59,12 +62,20 @@
         │   └── "longitude": "Ticket longitude"
         ├── "datetime": "Day Month, Year | Hour:Minute"
         ├── "status": "complete | pending | delayed | canceled"
-        ├── "viewed": { "userId": "md5(User email)" }
+        ├── "scheduled":
+        │   ├── "isScheduled": "true | false"
+        │   └── "data":
+        │       ├── "datetimeStart": "moment().format()"
+        │       └── "datetimeEnd": "moment().format()"
+        ├── "viewed":
+        │   └── "userId": "md5(User email)"
         └── "comments":
             ├── "datetime": "moment().format()"
             ├── "userId": "md5(User email)"
             ├── "comment": "Comment"
-            └── "viewed": { "userId": "md5(User email)" }
+            └── "viewed":
+                └── "userId": "md5(User email)"
+
 ```
 
 

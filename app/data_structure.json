@@ -10,6 +10,8 @@
                 {
                     "userId": "md5(User email)",
                     "email": "User email",
+                    "phone": "User phone",
+                    "role": "administrator | manager",
                     "photo": "gs://url - Firebase Storage",
                     "name": "User name",
                     "password": "Personal encryption",
@@ -33,6 +35,7 @@
                 {
                     "userId": "md5(User email)",
                     "email": "User email",
+                    "phone": "User phone",
                     "photo": "gs://url - Firebase Storage",
                     "name": "User name",
                     "password": "Personal encryption",
@@ -76,6 +79,13 @@
                     },
                     "datetime": "Day Month, Year | Hour:Minute",
                     "status": "complete | pending | delayed | canceled",
+                    "sheduled": { 
+                        "isScheduled": true, 
+                        "data": { 
+                            "datetimeStart": "moment().format()",
+                            "datetimeEnd": "moment().format()"
+                        }  
+                    },
                     "viewed": { "userId": "md5(User email)" },
                     "comments": [
                         {
