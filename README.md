@@ -25,6 +25,7 @@ Workstation é um aplicativo para solicitação e atendimento de chamados, para 
 + [Investimento](./docs/Investimento.md)
 + [Documentação de Software](./docs/Documentacao_de_software.md)
 + [Estrutura de dados](./docs/Estrutura_de_dados.md)
++ [Monetização](./docs/Monetizacao.md)
 + [Instalação](#instalação)
 + [Produção](#versão-de-produção)
 + [Licença](#licença)
